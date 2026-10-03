@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Base ─────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+/* Light mode (default when .dark is removed) */
+body {
+  @apply bg-gray-50 text-gray-700 font-sans antialiased transition-colors duration-300;
+}
+
+/* Dark mode */
+.dark body {
+  @apply bg-[#0a0f1a] text-gray-300;
+}
+
+:focus-visible {
+  @apply outline outline-2 outline-offset-2 outline-cyber-400;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * { animation: none !important; transition: none !important; }
+}
+
+/* ── Scrollbar ─────────────────────────────────────── */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+.dark ::-webkit-scrollbar-track {
+  @apply bg-[#0a0f1a];
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-300 rounded-full;
+}
+.dark ::-webkit-scrollbar-thumb {
+  @apply bg-gray-700;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-400;
+}
+.dark ::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-600;
+}
+
+/* ── Custom utilities ─────────────────────────────── */
+@layer utilities {
+  .glass-card {
+    @apply bg-white/80 backdrop-blur-md border border-gray-200/60 shadow-sm;
+  }
+  .dark .glass-card {
+    @apply bg-white/[0.04] border-white/[0.08] shadow-none;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-cyber-400 to-brand-400;
+  }
+
+  .hover-lift {
+    @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  .dark .hover-lift:hover {
+    @apply hover:shadow-cyber-500/10;
+  }
+
+  .section-divider {
+    @apply border-t border-gray-200/60;
+  }
+  .dark .section-divider {
+    @apply border-white/[0.06];
+  }
+
+  .animate-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  .animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ── Grid background pattern for hero ─────────────── */
+.hero-grid {
+  background-image: 
+    linear-gradient(rgba(20, 184, 166, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 184, 166, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+.dark .hero-grid {
+  background-image: 
+    linear-gradient(rgba(20, 184, 166, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(20, 184, 166, 0.06) 1px, transparent 1px);
+}
+
+/* ── Terminal styling ─────────────────────────────── */
+.terminal {
+  @apply rounded-xl overflow-hidden font-mono text-sm;
+  @apply bg-gray-900 border border-gray-800;
+}
+.terminal-header {
+  @apply flex items-center gap-2 px-4 py-3 bg-gray-800/80 border-b border-gray-700/50;
+}
+.terminal-dot {
+  @apply w-3 h-3 rounded-full;
+}
