@@ -67,7 +67,7 @@ export default function Education() {
 
               <div className="mt-4 space-y-3">
                 {[
-                  { platform: 'TryHackMe', desc: 'Defensive security paths, SOC analyst training' },
+                  { platform: 'TryHackMe', desc: 'Defensive and Offensive security paths, SOC analyst training' },
                   { platform: 'PortSwigger Academy', desc: 'Web security labs and vulnerability analysis' },
                   { platform: 'CyberTalents', desc: 'CTF challenges and cybersecurity competitions' },
                 ].map(({ platform, desc }) => (
