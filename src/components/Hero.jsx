@@ -71,8 +71,8 @@ export default function Hero() {
             </div>
 
             <p className="mt-6 max-w-lg text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
-              Software Engineering student focused on{' '}
-              <strong className="text-gray-900 dark:text-white font-semibold">defensive security</strong>. I build SOC labs,
+              Information Technology student focused on{' '}
+              <strong className="text-gray-900 dark:text-white font-semibold">defensive security </strong>. I build SOC labs,
               analyze logs and PCAPs, set up SIEMs, and deliver actionable investigation reports.
               I work on lab, educational, and small-scale environments.
             </p>
