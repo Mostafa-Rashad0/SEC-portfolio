@@ -17,14 +17,14 @@ export default function Education() {
             </div>
             <div className="flex-1">
               <h3 className="font-semibold text-gray-900 dark:text-white text-lg">
-                Computer Science / Software Engineering
+                Information Technology
               </h3>
               <p className="text-cyber-600 dark:text-cyber-400 text-sm mt-1">
-                [University Name — replace with your university]
+                Minia University
               </p>
               <div className="flex items-center gap-1.5 text-sm text-gray-500 dark:text-gray-500 mt-2">
                 <Calendar size={13} />
-                [Expected graduation year]
+                2027
               </div>
 
               <div className="mt-4 space-y-2">
