@@ -16,21 +16,21 @@ export default function Contact() {
     {
       icon: Mail,
       label: 'Email',
-      value: '[your.email@example.com]',
-      href: 'mailto:[your.email@example.com]',
+      value: 'm.rashad1mr1@gmail.com',
+      href: 'mailto:m.rashad1mr1@gmail.com',
       copyable: true,
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '[+XX XXX XXX XXXX]',
+      value: '+20 1006729562',
       href: 'tel:+XXXXXXXXXXX',
       copyable: true,
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: '[Your City, Country]',
+      value: 'Cairo, Egypt',
       href: null,
       copyable: false,
     },
@@ -40,14 +40,14 @@ export default function Contact() {
     {
       icon: Github,
       label: 'GitHub',
-      value: '[GitHub username]',
-      href: 'https://github.com/[username]',
+      value: 'Mostafa-Rashad0',
+      href: 'https://github.com/Mostafa-Rashad0',
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      value: '[LinkedIn profile]',
-      href: 'https://linkedin.com/in/[username]',
+      value: 'mostafa-rashad-16bb42299',
+      href: 'https://www.linkedin.com/in/mostafa-rashad-16bb42299/',
     },
   ]
 
