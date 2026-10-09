@@ -24,7 +24,7 @@ export default function About() {
     <Section
       id="about"
       title="About Me"
-      subtitle="Software Engineering student with a focus on cybersecurity and blue team operations."
+      subtitle="Information Technology student with a focus on cybersecurity and blue team operations."
     >
       <div className="grid gap-8 lg:grid-cols-3">
         {highlights.map(({ icon: Icon, title, desc }) => (
@@ -43,10 +43,10 @@ export default function About() {
 
       <div className="mt-12 glass-card rounded-2xl p-8">
         <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
-          I'm a <strong className="text-gray-900 dark:text-white">Computer Science / Software Engineering student</strong> focused on{' '}
+          I'm a <strong className="text-gray-900 dark:text-white">Information Technoloy / Software Engineering student</strong> focused on{' '}
           <strong className="text-cyber-600 dark:text-cyber-400">cybersecurity and Blue Team / SOC operations</strong>.
           My interests include SOC analysis, security monitoring, log analysis, SIEM implementation,
-          network security, incident investigation, threat detection, and security automation.
+          network infrastructure,network security, incident investigation, threat detection, and security automation.
         </p>
         <p className="mt-4 text-gray-600 dark:text-gray-300 leading-relaxed text-lg">
           I'm comfortable working with <strong className="text-gray-900 dark:text-white">Python</strong> and{' '}
