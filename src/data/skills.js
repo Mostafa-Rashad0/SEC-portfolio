@@ -71,7 +71,7 @@ export const platforms = [
   {
     name: 'TryHackMe',
     type: 'Hands-on Training Platform',
-    note: '[profile link / paths completed]',
+    note: 'https://tryhackme.com/p/0xRashad',
     url: '#',
   },
   {
