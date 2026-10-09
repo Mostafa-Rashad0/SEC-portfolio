@@ -158,7 +158,7 @@ export default function Contact() {
             </div>
 
             <a
-              href="mailto:[your.email@example.com]?subject=Freelance%20Inquiry&body=Hi%20Rashad%2C%0A%0AI'm%20interested%20in%3A%0A%0A"
+              href="mailto:m.rashad1mr1@gmial.com?subject=Freelance%20Inquiry&body=Hi%20Rashad%2C%0A%0AI'm%20interested%20in%3A%0A%0A"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-xl bg-gradient-to-r from-cyber-500 to-brand-500 text-white font-semibold shadow-lg shadow-cyber-500/20 hover:shadow-cyber-500/30 hover:-translate-y-0.5 transition-all duration-300"
             >
               <Mail size={18} />
